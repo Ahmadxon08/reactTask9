@@ -1,0 +1,131 @@
+@font-face {
+  font-family: Mulish;
+  src: url("./assets/fonts/Mulish.Regular.tff");
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  .home_head{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: 30px 0;
+    h1{
+        font-family: Mulish;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0.005em;
+        text-align: left;
+      color: #333;
+        transition:.3s;
+    }
+    input{
+        width: 30%;
+        padding: 10px;
+        outline: none;
+        border: 0;
+        font-size: 18px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+    select{
+        width: 20%;
+        padding: 10px;
+        outline: none;
+        border: 0;
+        font-size: 18px;
+        border: 1px solid #ccc;
+        border-radius: 6px; 
+        color: #fff;
+        background-color: rgba(28, 16, 107, 0.922);
+    }
+  }
+  .product_content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .product_card {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+      height: 500px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      margin: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+
+      img {
+        height: 290px;
+        box-shadow: 0 0 8px 2px #ccc;
+        width: 100% !important;
+      }
+      .product_body {
+        display: flex;
+        align-items: start;
+        gap: 14px;
+        padding: 16px;
+        flex-direction: column;
+        span{
+            font-family: Mulish;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 19px;
+            letter-spacing: 0.005em;
+            text-align: left;
+            color: #333;
+            transition:.3s;
+        }
+        h2 {
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.005em;
+          text-align: left;
+          color: #333;
+          font-family: Mulish;
+          transition: 0.3s;
+        }
+        p {
+          font-size: 28px;
+          font-weight: 900;
+          font-family: Mulish;
+          line-height: 24px;
+          letter-spacing: 0.005em;
+          text-align: left;
+          color: #333;
+          transition: 0.3s;
+        }
+        .product_btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 0;
+          font-family: Mulish;
+          height: 30px;
+          border-radius: 5px;
+          width: 90px;
+          color: #fff;
+          font-size: 18px;
+          cursor: pointer;
+          transition: all 0.3s;
+          background-color: rgba(0, 0, 255, 0.815);
+        }
+        .product_btn:hover {
+          transform: scale(1);
+
+          background-color: rgba(0, 0, 255, 0.698);
+        }
+      }
+    }
+    .product_card:hover {
+      box-shadow: 0 0 20px 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

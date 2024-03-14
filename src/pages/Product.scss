@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Mulish;
+    src: url("./assets/fonts/Mulish.Regular.tff");
+  }
+
+.product {
+  display: flex;
+  align-items: center;
+
+  .pro_head {
+    display: flex;
+    align-items: center;
+
+    margin-top: 30px;
+    width: 100%;
+    .btn_back {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
+      color: #2435af;
+      width: 80px;
+      transition: all 0.3s;
+      border-radius: 6px;
+      border: 1px solid #2435af;
+      font-size: 20px;
+      height: 30px;
+    }
+    .btn_back:hover {
+      background-color: #2435af;
+      color: #fff;
+    }
+    h1 {
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      justify-content: center;
+      color: #288b98;
+    }
+  }
+  .pro_content {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    padding-bottom: 30px;
+    .pro_card {
+      display: flex;
+      align-items: center;
+      border-radius: 6px;
+      padding: 30px;
+      gap: 30px;
+      box-shadow: 0 1px 5px 6px #ccc;
+      .pro_img {
+        height: 100%;
+        position: relative;
+      
+        img {
+          height: 50%;
+          border-radius: 5px;
+        }
+        span {
+          position: absolute;
+          right: 0;
+          top: 0;
+          padding: 6px;
+          border-radius: 5px;
+          color: #fff;
+          font-size: 22px;
+          background-color: #c97124;
+        }
+      }
+      .pro_texts{
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 8px;
+        h3{
+            font-size: 28px;
+            color: #2b2b2c;
+        }
+        h1{
+            font-size: 28px;
+            color: #2b2b2c;
+        }
+        span{
+            font-size: 28px;
+            color: #0d0d8c;
+            font-family: Mulish;
+            font-weight: 700;
+        }
+        p{
+            font-size: 23px;
+            color: #2b2b2c;
+        }
+      }
+    }
+  }
+}
